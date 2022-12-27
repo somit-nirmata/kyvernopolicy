@@ -18,8 +18,9 @@ spec:
         - Deployment
     mutate:
       patchStrategicMerge:
-        strategy:
-          type: RollingUpdate
-          rollingUpdate:
-            maxUnavailable: 25%
-            maxSurge: 75%
+        spec:
+          strategy:
+            type: RollingUpdate
+            rollingUpdate:
+              maxUnavailable: 25%
+              maxSurge: 75%
