@@ -11,7 +11,7 @@ metadata:
       Rolling Update.      
 spec:
   rules:
-  - name: add-labels
+  - name: rolling-update
     match:
       resources:
         kinds:
